@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{id}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../include/style.css">
+
+        <script>
+        MathJax = {{
+          tex: {{
+            inlineMath: {{'[+]': [['$', '$']]}}
+          }},
+        }};
+        </script>
+        <script defer src="../include/tex-chtml.js"></script>
+
+        <link rel="stylesheet" href="../include/default.min.css">
+        <script src="../include/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+
+    </head>
+
+    <body>
+        <div class="content">
+            {body}
+        </div>
+    </body>
+</html>

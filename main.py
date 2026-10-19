@@ -11,7 +11,7 @@ def convert(file):
     lines = file.read_text(encoding="utf-8").splitlines(keepends=True)
 
     id = file.stem
-    md = "".join(lines)
+    md = "".join(lines).replace("\\", "&#92;")
     body = markdown.markdown(
         md,
         extensions=MD_EXT
